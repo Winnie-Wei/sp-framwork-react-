@@ -1,0 +1,167 @@
+
+
+
+@button-color-green: #42ce5a;
+@switch-bg: #42ce5a;
+@table-header-bg: #F7F7F7;
+@table-row-bg: #E9F7FE;
+@table-row-border: #E9E9E9;
+
+.dptContent {
+    min-height: 90%;
+    padding: 30px;
+
+    .dptTitle {
+        
+    }
+
+    .dptSearch {
+        width: 100%;
+        padding: 10px 0;
+
+        .dptSearchInput {
+            width: 220px;
+            margin: 0 20px;
+        }
+    }
+
+    .dptAdd{
+        overflow: auto;
+        padding: 10px 0;
+
+        button {
+            float: right;
+            margin-right: 10px;
+        }
+
+        .antBtnPrimary {
+            background-color: @button-color-green;
+            border-color: @button-color-green;
+        }
+    }
+    
+    .dptTable {
+        text-align: left;
+        font-size: 12px;
+
+        .index {
+            padding-left: 10px;
+        }
+    }
+
+    .dptTableTitle {
+        background-color: @table-header-bg;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .dptTableRow {
+        height: 38px;
+        line-height: 38px;
+        border-bottom: 1px solid @table-row-border;
+
+        &:hover {
+            background-color: @table-row-bg;
+        }
+    }
+
+    .dptSwitch.ant-switch-checked {
+        background-color: @switch-bg;
+    }
+}
+
+.dptModify {
+    min-height: 90%;
+    padding: 30px;
+    
+    .dptFramework {
+        margin-right: 30px;
+        border: 1px solid @table-row-border;
+        position: relative;
+
+        .dptTreeBox {
+            overflow: auto;
+            height: 420px;
+            margin-bottom: 40px;
+        }
+
+        .dptTreeMenus {
+            position: absolute;
+            bottom: 0;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .dptTreeTitle {
+        background-color: @table-header-bg;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .dptModifyBox {
+        min-height: 400px;
+        border: 1px solid @table-row-border;
+    }
+    
+    .dptModifyTitle {
+        background-color: @table-header-bg;
+        width: 100%;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .dptModifyForm {
+        padding: 30px;
+    }
+
+}
+
+
+
+.deptTree {
+    font-size: 12px;
+
+    .deptTreeNode {
+        
+        &:hover {
+            .deptTreeNodeActions {
+                display: block;
+            }
+        }
+    }
+
+    .deptTreeNodeName {
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .deptTreeNodeActions {
+        display: none;
+
+
+        i {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+
+.deptDropdown {
+    width: 100%;
+} 
+
+
+
+
+
+
+
+
